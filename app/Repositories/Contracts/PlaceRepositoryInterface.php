@@ -2,21 +2,18 @@
 
 namespace App\Repositories\Contracts;
 
-interface CategoryRepositoryInterface
+interface PlaceRepositoryInterface
 {
     public function all();
 
+    public function search($key);
+    
     public function find($id);
 
     public function paginate();
 
-    public function showParent();
-
-    public function showConcept();
-
-    public function create(array $input);
-
     public function update(array $input, $id);
 
     public function delete($id);
+
 }

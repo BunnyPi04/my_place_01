@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Place;
 use Illuminate\Http\Request;
+use App\Repositories\Contracts\PlaceRepositoryInterface;
 
 class HomeController extends Controller
 {
@@ -11,9 +13,12 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    protected $placeRepository;
+    
+    public function __construct(PlaceRepositoryInterface $placeRepository)
     {
         $this->middleware('auth');
+        $this->placeRepository = $placeRepository;
     }
 
     /**
@@ -24,5 +29,14 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    public function getPlaces(Request $request)
+    {
+        $key = $request->key;
+        $places = $this->placeRepository->search($key);
+
+        return response($places)
+            ->header('Content-type', 'application/json');
     }
 }
