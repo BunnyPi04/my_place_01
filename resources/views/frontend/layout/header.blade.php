@@ -74,7 +74,7 @@
                 </div>
             </div>
             @else
-            <a class="navbar-brand" href="{{ route('login') }}"><i class="fa fa-sign-in" aria-hidden="true">{{ trans('messages.loginhome') }}</i></a>
+            <a class="navbar-brand" href="{{ route('login') }}"><i class="fa fa-sign-in" aria-hidden="true"></i>{{ trans('messages.loginhome') }}</a>
             @endif
         </div>
         @if(Auth::check())

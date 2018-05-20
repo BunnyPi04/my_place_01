@@ -169,6 +169,9 @@ border: none;
     float: left;
     padding-right: 15px;
 }
+.fa-sign-in {
+    padding: 0px 8px;
+}
 #head-navbar {
     background: #4267b2;
 }
@@ -678,6 +681,85 @@ border: none;
 }
 .new-noti:hover {
     background-color: lightblue !important;
+}
+.chat-name {
+    background-color: #f6f7f9;
+    border: 1px solid #d9dbde;
+    width: 270px;
+    bottom: 0;
+    right: 10%;
+    margin: 0px 5px;
+    padding: 0px 10px;
+    position: fixed;
+    float: right;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    line-height: 25px;
+}
+.click {
+    float: left;
+    width: 90%;
+}
+.chat-name .fa-close {
+    font-size: 25px;
+    float: right;
+    position: absolute;
+    right: 5px;
+}
+#myDiv {
+    margin-top: 30px;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    display: none;
+    position: relative;
+    overflow: scroll;
+}
+.chat-input {
+    position: fixed;
+    bottom: 0px;
+}
+.chat-input input {
+    width: 190px;
+    float: left;
+}
+.chat-input .btn-info {
+    padding: 5px 13px;
+    float: right;
+    background-color: lightblue;
+}
+.chat-content {
+    padding: 5px;
+}
+.friend .avatar {
+    float: left;
+}
+.yours .avatar {
+    float: right;
+}
+.chat-content .avatar img {
+    width: 25px;
+    border-radius: 50%;
+}
+.friend, .yours {
+    display: inline-block;
+}
+.friend-text, .your-text {
+    border-radius: 10px;
+    float: left;
+    max-width: 65%;
+    padding: 0px 5px;
+}
+.friend-text {
+    float: left;
+    background-color: #f1f0f0;
+    margin-left: 5px;
+}
+.your-text {
+    float: right;
+    background-color: #4080ff;
+    margin-right: 5px;
+    color: white;
 }
 body::-webkit-scrollbar {
     width: 1em;

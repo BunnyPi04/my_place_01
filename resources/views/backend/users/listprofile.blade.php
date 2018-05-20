@@ -4,7 +4,7 @@
         <div class="row">
             <div class="large-10 columns">
                 <div class="page-name">
-                    <h3 class="left">{{ trans('messages.slide-manage') }}</h3>
+                    <h3 class="left">{{ trans('messages.user-manage') }}</h3>
                     <div class="clearfix"></div>
                 </div>
             </div>

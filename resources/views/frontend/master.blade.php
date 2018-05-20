@@ -38,6 +38,11 @@
                 @yield('main')
             </div>
         </div>
+        <!-- if (chatbox) { -->
+        <div class="container">
+            @include('frontend.chatbox')
+        </div>
+        <!-- } -->
         @include('frontend.layout.footer')
         @section('contentJs')
         {{ Html::script('assets/ckeditor/ckeditor.js') }}
